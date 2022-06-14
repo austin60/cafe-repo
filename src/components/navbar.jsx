@@ -20,7 +20,7 @@ function NavBar(){
   <ul id="unordered">
   
       <li><a href="#">Home</a></li>
-      <li><a href="#">Purchase</a></li>
+      <li><a href="#">Menu</a></li>
       <li><a href="#">My Order</a></li>
       <li><a href="#">Account</a></li>
       <li><a href="#">Contact Us</a></li>

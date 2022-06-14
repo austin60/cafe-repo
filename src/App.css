@@ -1,5 +1,9 @@
+.App{
+  min-height: 100vh;
+}
 :root{
   --main-bg-color:rgb(242, 247, 244);
+  --dark-blue-color:rgba(24, 32, 46,0.5)
 }
 .navbar{
   background:var(--main-bg-color) ;
@@ -22,6 +26,10 @@ nav span{
   cursor: pointer;
   display: none;
 }
+#logo{
+  font-family: 'Dancing Script', cursive;
+}
+
 @media(max-width: 800px){
 nav span{
   display: block;
@@ -71,6 +79,20 @@ nav span{
     width:100%;
     margin: auto;
   }
+}
+/*////////mini-footer///////*/
+.m-footer{
+  background:var(--main-bg-color) ;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 100%;
+  padding: 0px;
+  font-size: 13px;
+  height: 20px;
+}
+.m-footer p{
+  
 }
 /*////////counter///////*/
 .counter{
@@ -124,7 +146,10 @@ label{
 }
 /*////////footer///////*/
 .footer{
-  background: yellow;
+  background:yellow;
+  position: sticky;
+  top:100%;
+  font-size: 14px;
 }
 .upper-about{
   /*background: blue;*/
@@ -132,8 +157,9 @@ label{
 }
 .info{
   width:30%; 
-  margin:10px;
+  margin:5px 10px 0px 10px;
   height: auto;
+ /* background: red;*/
 }
 .info h5{
   text-align: center;
@@ -163,10 +189,11 @@ label{
 .lower-about{
   display: flex;
   justify-content: space-between;
-  /*background: purple;*/
+ /* background: purple;*/
 }
 .socials {
  /*background: pink;*/
+ margin-top: 0px;
   width: 35%;
 }
 .socials h6{
@@ -204,6 +231,7 @@ label{
   }
   .upper-about{
    display:block;
+
   }
   .info{
   width:95%;
@@ -233,11 +261,12 @@ label{
 }
 /*////////display///////*/
 .item-display{
-  width:200px;
-  height: 330px;
+  width:150px;
+  height: 280px;
   background: rgb(235, 235, 230);
   margin:10px;
   border-radius: 5px;
+  font-size: 13px;
 }
 .item-display:hover{
 /*box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;*/
@@ -270,11 +299,15 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display:flex; 
   justify-content: center;
   padding: 5px;
+  font-size: 12px
 }
+/*.purchase-btn button{
+  font-size: 12px;
+}*/
 @media (max-width:660px){
   .item-display{
-    width:170px;
-   height: 300px;
+    width:130px;
+   height: 260px;
   }
   .purchase-btn button{
     font-size: 12px;
@@ -439,4 +472,53 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   .person-comment{
     font-size:13px;
   }
+}
+/*///////////PAGES///////////*/
+/*////Home/////*/
+#home{
+  background: url('https://kenyanwallstreet.com/wp-content/uploads/2020/11/2015_06_10_nairobi_6.jpg');
+  height: 100vh;
+  width: 100vw;
+ 
+  
+}
+#home-intro{
+  background: var(--dark-blue-color);
+  margin:auto;
+  width: 350px;
+  display: flex;
+  margin-top: 170px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  display: block;
+  padding: 10px;
+  
+}
+#home-intro h2{
+  font-family: 'Dancing Script', cursive; 
+  font-size: 30px;
+  font-weight: 650;
+  color: aliceblue;
+}
+#homeBtn{
+  display: flex;
+  justify-content: space-around;
+  
+}
+/*////Menupg/////*/
+#menu-page{
+  min-height: 100vh
+}
+#display-content{
+ /* background: yellow;*/
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*////Contactpg/////*/
+#contact-page{
+  min-height: 100vh;
 }

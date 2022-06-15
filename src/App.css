@@ -522,3 +522,77 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 #contact-page{
   min-height: 100vh;
 }
+#review-section
+{
+height:60vh;
+/*background: pink;*/
+display: flex;
+align-content: center;
+justify-content: space-around;
+
+}
+#subscribe{
+  /*background: burlywood;*/
+  width:30%;
+  height: 320px;
+  margin:10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  background: var(--main-bg-color);
+}
+#subscribe:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#subscribe button{
+  width: 60%;
+}
+/*////Account-pg/////*/
+#account-page{
+  min-height: 100vh;
+}
+.accContent{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  
+  
+}
+.accCats{
+  height: 80vh;
+  overflow: scroll;
+  overflow-y: scroll;
+  width: 60vw;
+  background: red;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+}
+.accMenu ul{
+  display:flex;
+  flex-direction: column;
+  background: var(--main-bg-color);
+  justify-content: center;
+  margin-top: 7px;
+  padding: 8px 8px 0px 6px;
+  margin-left: 5px;
+}
+.accMenu li{
+  list-style: none;
+  /*border: 1px solid black;*/
+  width: 170px;
+  margin-bottom: 6px;
+  height: 40px;
+
+}
+.accMenu a{
+  color:black;
+  width: 100%;
+  
+}
+.accMenu button{
+  width:100%;
+}

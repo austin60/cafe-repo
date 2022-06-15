@@ -2,11 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import './main.js';
 import './components/style.css';
-import ContactPg from './components/contactpg';
+import AccPg from './components/accPg';
 function App() {
   return (
     <div className="App">
-    <ContactPg />
+    <AccPg/>
     </div>
   );
 }

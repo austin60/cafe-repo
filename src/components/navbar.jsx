@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import './style.css';
-
+import {Link} from 'react-router-dom';
 import { HiMenu,HiOutlineSearch } from "react-icons/hi";
 import { ImCross } from "react-icons/im";
 
@@ -19,11 +19,11 @@ function NavBar(){
     </form>
   <ul id="unordered">
   
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">My Order</a></li>
-      <li><a href="#">Account</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><Link to="/home">Home</Link></li>
+      <li><Link to="/menu">Menu</Link></li>
+      <li><Link to="/home">My Order</Link></li>
+      <li><Link to="/account">Account</Link></li>
+      <li><Link to="/contact">Contact Us</Link></li>
  
   </ul>
 

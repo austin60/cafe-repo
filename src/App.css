@@ -2,7 +2,7 @@
   min-height: 100vh;
 }
 :root{
-  --main-bg-color:rgb(242, 247, 244);
+  --main-bg-color:rgb(223, 232, 225);
   --dark-blue-color:rgba(24, 32, 46,0.5)
 }
 .navbar{
@@ -113,15 +113,20 @@ nav span{
   display:flex;
   justify-content: space-between;
 }
+form h4{
+  text-align: center;
+}
 /*////////login///////*/
 .login-form{
-  background: rgb(223, 232, 225);
+  background: var(--main-bg-color);
   margin:6px;
   border-radius: 5px;
 }
 /*////////signin///////*/
 .signIn{
-  background: rgb(242, 247, 244);
+  background: var(--main-bg-color);
+  margin:6px;
+  border-radius: 5px;
 }
 form{
   padding:10px;
@@ -143,6 +148,12 @@ label{
 .manage button{
   font-size: 13px;
   }
+}
+/*////////deposit///////*/
+.depo-form{
+  background:var(--main-bg-color);
+  margin:10px;
+  border-radius: 5px;
 }
 /*////////footer///////*/
 .footer{
@@ -555,7 +566,7 @@ justify-content: space-around;
 }
 .accContent{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
   
   
@@ -565,12 +576,18 @@ justify-content: space-around;
   overflow: scroll;
   overflow-y: scroll;
   width: 60vw;
-  background: red;
-  /*display: flex;
+  /*background: red;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;*/
 }
+@media(max-width:660px){
+  .accCats {
+    width:100%;
+  }
+}
+
 .accMenu ul{
   display:flex;
   flex-direction: column;

@@ -6,6 +6,7 @@ function Login(){
 	return(
 		<form className="login-form" action="">
 		<div>
+		<h4>Login</h4>
 		<label htmlFor="">Name</label>
 		<input type="text" className="form-control" onChange={(e)=> setName(e.target.value)} value={name}/>
 		</div>

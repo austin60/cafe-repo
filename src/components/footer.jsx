@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import {Link} from 'react-router-dom';
 import { FaInstagramSquare,FaFacebookSquare,FaTwitterSquare,FaPinterest } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 function Footer(){
@@ -23,9 +24,9 @@ function Footer(){
 		<div className="info navigator">
 		<h5>Navigation</h5>
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Purchase</a></li>
-			<li><a href="#">Account</a></li>
+			<li><Link to="/home">Home</Link></li>
+			<li><Link to="/menu">Purchase</Link></li>
+			<li><Link to="/account">Account</Link></li>
 			<li><a href="#">Q&A</a></li>
 			<li><a href="#">Terms & Conditions</a></li>
 		</ul>

@@ -6,8 +6,8 @@ import React,{Component } from 'react';
 		class MenuPg extends Component{
             state = {
                 displays:[
-                {id:1,food:"Chicken Masala",price:1000, srcimg:"https://www.shorturl.at/img/shorturl-icon.png"},
-                {id:6,food:"Chiken Steak",price:800, srcimg:"https://miro.medium.com/max/566/1*j3xVt5zsYuAB19-QATkk_w.png"}
+                {id:1,food:"Chicken Masala",price:1000, srcimg:"https://images.herzindagi.info/image/2019/Jan/chiken-benefits-for-health.jpg"},
+                {id:6,food:"Chiken Steak",price:800, srcimg:"https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg"}
             ]
                 };
 		 render() {

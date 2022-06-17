@@ -11,11 +11,11 @@ function NavBar(){
 }
 	return(
 
- <nav class="navbar">
-  <label class="navbar-brand" href="#" id="logo">Logo</label>
-   <form class="d-flex" id="form">
-      <input id="search"class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button id="search-btn" class="btn btn-outline-secondary" type="submit"><HiOutlineSearch fontSize="1 em"/></button>
+ <nav className="navbar sticky-top">
+  <label className="navbar-brand" href="#" id="logo">Logo</label>
+   <form className="d-flex" id="form">
+      <input id="search" className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button id="search-btn" className="btn btn-outline-warning" type="submit"><HiOutlineSearch fontSize="1 em"/></button>
     </form>
   <ul id="unordered">
   

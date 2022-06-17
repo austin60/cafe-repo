@@ -18,7 +18,7 @@ import React,{Component } from 'react';
 			       <p><b>ksh {price}</b></p>
 			     </div>
 			   <div className="purchase-btn">
-			      <button className="btn btn-success btn-sm">Add to Order</button>
+			      <button className="btn btn-warning btn-sm">Add to Order</button>
 			   </div>
 			</div>
 

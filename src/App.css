@@ -3,19 +3,21 @@
 }
 :root{
   --main-bg-color:rgb(223, 232, 225);
-  --dark-blue-color:rgba(24, 32, 46,0.5)
+  --dark-blue-color:rgba(24, 32, 46,0.5);
+  --orange-color:rgb(250, 194, 42);
 }
 /*////////NavBar///////////*/
 .navbar{
-  background:var(--main-bg-color) ;
+  background:var(--dark-blue-color) ;
   display:flex;
-  position: fixed;
+  position: sticky;
   z-index: 3;
 }
 .navbar li{
   list-style: none;
   display: inline-block;
   margin:0 5px;
+  
 }
 .navbar #dot{
   height:10px;
@@ -28,10 +30,10 @@
   margin-left: 59px;
 }
 .navbar a{
-  color:black;
+  color:white;
 }
 .navbar a:hover{
-  
+  color:var(--orange-color);
 }
 nav span{
   cursor: pointer;
@@ -39,6 +41,7 @@ nav span{
 }
 #logo{
   font-family: 'Dancing Script', cursive;
+  color:var(--orange-color);
 }
 
 @media(max-width: 800px){
@@ -88,6 +91,7 @@ nav span{
  #logo{
     font-size: 15px;
     margin: 0px;
+    color:var(--orange-color);
   }
   .navbar ul{
     width:100%;
@@ -187,7 +191,7 @@ label{
 }
 /*////////footer///////*/
 .footer{
-  background:yellow;
+  background:var(--orange-color); /*rgb(250, 194, 42);*/
   position: sticky;
   top:100%;
   font-size: 14px;
@@ -223,6 +227,10 @@ label{
 }
 .navigator li{
   list-style: none;
+  color:black;
+}
+.navigator a:hover{
+  color:black;
 }
 .navigator a{
   color:inherit;
@@ -519,10 +527,12 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 #home{
   background: url('https://kenyanwallstreet.com/wp-content/uploads/2020/11/2015_06_10_nairobi_6.jpg');
   height: 100vh;
-  width: 100vw;
- 
-  
+  width: 100vw; 
 }
+#home a{
+  text-decoration: none;
+  color: black;
+} 
 #home-intro{
   background: var(--dark-blue-color);
   margin:auto;

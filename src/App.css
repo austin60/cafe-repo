@@ -459,6 +459,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 /*//////review//////*/
 .review-card{
   width:30%;
+  padding: 10px;
   margin: 10px;
   background: rgb(223, 232, 225);
   border-radius: 4px;
@@ -514,9 +515,18 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   font-size: 14px;
  }
 }
-@media (max-width:360px){
+@media(max-width:840px){
+  .person-comment{
+    font-size:14px;
+  }
+  #subscribe h2{
+    font-size:24px ;
+  }
+}
+@media (max-width:450px){
   .review-card{
-    width: 50%;
+    width: 80%;
+    margin:auto;
   }
   .person-comment{
     font-size:13px;
@@ -593,12 +603,39 @@ justify-content: space-around;
   text-align: center;
   border-radius: 5px;
   background: var(--main-bg-color);
+  padding: 10px;
 }
 #subscribe:hover{
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 #subscribe button{
   width: 60%;
+}
+@media(max-width:660px){
+  #subscribe{
+    font-size: 14px;
+    width: 45%;
+  }
+  #subscribe button{
+    font-size: 13px;
+  }
+  #subscribe h2{
+    font-size: 16px;
+  }
+}
+@media(max-width:450px){
+  #review-section{
+ /* background: red;*/
+  display:flex;
+  flex-direction: column;
+  height:auto;
+}
+#subscribe{
+  width: 80%;
+  height:auto;
+  margin: auto;
+  margin-top: 10px;
+}
 }
 /*////Account-pg/////*/
 #account-page{
